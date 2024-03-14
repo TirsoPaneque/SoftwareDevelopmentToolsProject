@@ -6,12 +6,11 @@ import seaborn as sns
 
 @st.cache  # Add caching for improved performance
 def load_data():
-    df = pd.read_csv('C:\Programming\my_code\Cursos\Tripleten\SoftwareDevelopmentToolsProject\vehicles_us.csv')  # Replace 'your_dataset.csv' with the actual filename
+    df = pd.read_csv('vehicles_us.csv')  # Replace 'your_dataset.csv' with the actual filename
     return df
 
 df = load_data()
 
-# Header with text
 st.header("Exploratory Data Analysis")
 
 # Plotly Express histogram
