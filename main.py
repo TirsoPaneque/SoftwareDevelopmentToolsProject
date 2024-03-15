@@ -6,7 +6,7 @@ import seaborn as sns
 
 @st.cache  # Add caching for improved performance
 def load_data():
-    df = pd.read_csv('vehicles_us.csv')  # Replace 'your_dataset.csv' with the actual filename
+    df = pd.read_csv('https://practicum-content.s3.us-west-1.amazonaws.com/datasets/vehicles_us.csv')
     return df
 
 df = load_data()
@@ -14,7 +14,7 @@ df = load_data()
 st.header("Exploratory Data Analysis")
 
 # Plotly Express histogram
-histogram = px.histogram(df, x='column_name')  # Replace 'column_name' with the column you want to plot
+histogram = px.histogram(df, x='column_name')  # Replace 'column_name' with the column i should plot
 st.plotly_chart(histogram)
 
 # Plotly Express scatter plot
