@@ -1,9 +1,0 @@
-Hi Alexander :D Im sorry but i dont really understood a few of your observations so im putting my questions here. Thanks:
-
-I didnt drop any NaN in model_year and all the missing values were filled. 
-
-In cylinders i used the mode since it felt more right. Statistics is not my strong suit so could you please explain why is median a better fit in this case, and i which cases mode could be a better fit? Thanks
-
-Also a question in the odometer. Isnt the price of the car a more relevant factor regarding the odometer than the year of the car? An old car could have few miles and a new one could have many, yet both cases would be sort of reflected in the price right? (Disclaimer: Dont know much about cars never driven before hahaha.)
-
-Lastly: Im not sure what kind of output the ipynb should have. A conclusion you mean? And, i thought i put comments enough but im also terrible at that. Should i add a bunch more? Like after the graphs and stuff like that?
