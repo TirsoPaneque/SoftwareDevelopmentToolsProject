@@ -26,7 +26,7 @@ model_year = st.sidebar.selectbox('Vehicle Year', sorted(df['model_year'].unique
 # Now im adding to the sidebar a button to select particular car models
 sorted_unique_car_model = sorted(df['model'].unique())
 sorted_unique_car_model.insert(0, 'All')
-selected_model = st.sidebar.multiselect('Model', [car.title() for car in sorted_unique_car_model])
+selected_model = st.sidebar.multiselect('Model', [car.lower() for car in sorted_unique_car_model])
 
 df['odometer'] = df.groupby('price')['odometer'].apply(lambda x: x.fillna(x.mean())).reset_index(drop=True)
 df['odometer'] = df['odometer'].fillna(df['odometer'].mean())
